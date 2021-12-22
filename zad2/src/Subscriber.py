@@ -28,6 +28,7 @@ class Subscriber:
             else:
                 raise DatabaseError("Something went wrong in database")
         except ConnectionError:
+            # Do some logging
             raise
 
     def remove_client(self, client: str) -> str:
@@ -42,6 +43,7 @@ class Subscriber:
             else:
                 raise DatabaseError("Something went wrong in database")
         except ConnectionError:
+            # Do some logging
             raise
 
     def send_message(self, client: str, message: str) -> str:
