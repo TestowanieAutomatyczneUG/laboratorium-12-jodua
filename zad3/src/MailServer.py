@@ -1,0 +1,2 @@
+class MailServer:
+    pass
